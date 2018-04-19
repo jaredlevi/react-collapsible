@@ -41,7 +41,8 @@
   "scripts": {
     "build": "babel src/Collapsible.js > dist/Collapsible.js",
     "prepublish": "npm run build",
-    "example": "node_modules/.bin/webpack-dev-server"
+    "example": "node_modules/.bin/webpack-dev-server",
+    "postinstall": "npm run build"
   },
   "peerDependencies": {
     "prop-types": "^15.5.8",
